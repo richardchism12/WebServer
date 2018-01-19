@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>About.html</title>
+	<link href="Diego_Layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<body>
+
+		<div id="container">
+			<header>
+				<p>
+					<img class="logo" align="left" style='display:block; width:240x; height:85; id='base64image' src="McCoy_Logo.png"/>
+				</p>
+			</header>
+
+			
+			<main>
+				<div id="main">
+					<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<li><a href="Index.html">Home</a></li>
+					<li><a href="Calibrate_Diego.html">Calibration</a></li>
+					<li><a href="About_Diego.html">About</a></li>
+				</div>
+				<p>
+					<h1 align="Center">About Diego</h1>
+					<form>
+						<fieldset>  
+						    <p>	<label>Product Model Name</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p>	<label>Part Number</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p>	<label>product Revision</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p>	<label>Software Revision</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+						</fieldset>
+						<fieldset>
+							<p>	<label>IP Address</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p>	<label>Subnet Mask</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p>	<label>Gateway Address</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p>	<label>MAC Address</label>	<input type="text" id="myText" value="0.000" readonly="read only" /> </p>
+							<p></p>
+						</fieldset>
+					</form>
+				</p>
+			</main>
+		</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>

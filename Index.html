@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Index.html</title>
+	<link href="Diego_Layout.css" rel="stylesheet" type="text/css">
+</head>
+
+	<body>
+	
+	
+		<div id="container">
+			<header>
+				<p>
+				<span align ="left" style="font-size:30px;curser:pointer" onclick="openNav()">&#9776;</span>
+				<!-- Use any element to open the sidenav -->
+				<img class="logo" align="right" style='display:block; width:70x; height:30; id='base64image' src="Diego Logo.png"/>
+				</p>
+			</header>
+
+			<main>
+			
+							<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+			<div id="main">
+				<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<li><a href="Config_Diego.html">Configure</a></li>
+					<li><a href="Control_Diego.html">Control</a></li>
+					<li><a href="Calibration_Diego.html">Calibrate</a></li>
+					<li><a href="Status_Diego.html">About</a></li>
+				</div>
+				
+				<!-- Use any element to open the sidenav -->
+				<span onclick="openNav()">open</span>
+
+
+				<p>
+					<h1 align="Center">McCoy Load Sensor</h1>
+					<form>
+						<fieldset>  
+							<p align="center" style="font-size:60px;">
+								<label style="font-size:60px;">Weight (kps)</label>
+								<input style="font-size:60px;"  type="text" id="myText" value="0.000" readonly="read only" />	
+						</fieldset>
+					</form>
+				</p>
+			</main>
+		</div>
+		
+		<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+		
+	</body>
+</html>
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>About.html</title>
+	<link href="Diego_Layout.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+				
+				<p>
+					<span align ="left" style="font-size:30px;curser:pointer" onclick="openNav()">&#9776;</span>	
+					<!-- Use any element to open the sidenav -->
+					<img class="logo" align="right" style='display:block; width:70x; height:30; id='base64image' src="Diego Logo.png"/>
+				</p>
+
+			</header>
+
+			<main>
+			
+										<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+				<div id="main">
+					<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<a href="Index.html">Status</a>
+					<a href="Config_Diego.html">Configure</a>
+					<a href="Control_Diego.html">Control</a>
+					<a href="Calibrate_Diego.html">Calibrate</a>
+				</div>
+				
+				<!-- Use any element to open the sidenav 
+				<span onclick="openNav()">open</span>-->
+			
+				<p>
+					<h1 align="Center">About Your Device</h1>
+					<form>
+						<fieldset>  
+						    <p>	<label>Product Model Name:  		Diego Bot</label>	<!-- <input type="text" id="myText" value="0.000" readonly="read only" /> </p> -->
+							<p>	<label>Part Number: 				DB-01</label>	<!-- <input type="text" id="myText" value="0.000" readonly="read only" /> </p>-->
+							<p>	<label>product Revision:  			V 1.001.001.001</label>	<!--<input type="text" id="myText" value="0.000" readonly="read only" /> </p> -->
+							<p>	<label>Web Interface Version:  		V 1.001</label>
+							<p>	<label>Arduino Interface Version:  	V 1.001</label>
+							<p>	<label>Pi Interface Version:  		V 1.001</label>
+							<p>	<label>Software Revision: 			V 1.001</label>	<!-- <input type="text" id="myText" value="0.000" readonly="read only" /> </p> -->
+						</fieldset>
+						<fieldset>
+							<p>	<label>IP Address:  		192.168.1.100</label>	<!--<input type="text" id="myText" value="0.000" readonly="read only" /> </p> -->
+							<p>	<label>Subnet Mask: 		255.255.255.0</label>	<!--<input type="text" id="myText" value="0.000" readonly="read only" /> </p>-->
+							<p>	<label>Gateway Address: 	192.168.1.1</label>		<!--<input type="text" id="myText" value="0.000" readonly="read only" /> </p>-->
+							<p>	<label>MAC Address:			XX:XX:XX:XX:XX:XX</label>	<!--<input type="text" id="myText" value="0.000" readonly="read only" /> </p>-->
+							<p></p>
+						</fieldset>
+					</form>
+				</p>
+			</main>
+		</div>
+		
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+</html>

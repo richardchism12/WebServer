@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Calibration_Diego.html</title>
+	<link href="Diego_Layout.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+ <body>
+		
+	<div id="container">
+			<header>
+				<p>
+					<span align ="left" style="font-size:50px;curser:pointer" onclick="openNav()">&#9776;</span>
+					<!-- Use any element to open the sidenav -->
+					<img class="logo"  style="float: right; 'display:block; width:70x; height:30; id='base64image'" src="Diego Logo.png"/>
+				</p>
+			</header>
+			
+			<main>
+				<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+				<div id="main">
+					<div id="mySidenav" class="sidenav">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<li><a href="Index.html">Status</a></li>
+					<li><a href="Config_Diego.html">Configure</a></li>
+					<li><a href="Control_Diego.html">Control</a></li>
+					<li><a href="Calibration_Diego.html">About</a></li>
+				</div>
+				
+				<!-- Use any element to open the sidenav -->
+				<!--<span onclick="openNav()">open</span>-->
+				<p>
+					<h1 align="Center">Field Calibration</h1>
+					<form>
+						<fieldset>  
+							<p>
+								<p align="right"><input type="button"  class="button" value="Start Calibration"></p>
+								
+								<p><label>Number of Calibration Points</label>	<input type="text" id="myText" value="0.000" readonly="read only" /></p>
+								
+								<p><label>Cal Step 1  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+								
+								<p><label>Cal Step 2  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+
+								<p><label>Cal Step 3  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+
+								<p><label>Cal Step 4  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+
+								<p><label>Cal Step 5  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+
+								<p><label>Cal Step 6  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+
+								<p><label>Cal Step 7  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+
+								<p><label>Cal Step 8  </label> &emsp 
+								<label>Raw Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" /> 	
+								<label>Actual Value &nbsp</label><input type="text" id="myText" value="0.000" readonly="read only" />
+								<input type="button"  class="button" value="Next Step"></p>
+								
+								<p>
+								<input type="button" class="button" value="Start Calibration">
+								<input type="button" class="button" value="Cancel Calibration">
+								</p>
+							</p>
+						</fieldset>
+					</form>
+				</p>
+			</main>
+		</div>
+	 
+ <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+</body>
+
+</html>
